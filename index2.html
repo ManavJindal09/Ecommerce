@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet2.css">
+	<link rel="stylesheet" type="text/css" href="CSSGRID.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Home Page</title>
+	<script type="text/javascript">
+		function openNav(){
+			document.getElementById("sideNav").style.width="280px";
+		}
+		function closeNav(){
+			document.getElementById("sideNav").style.width="0px";
+			document.body.style.backgroundColor="white";
+		}
+		var txt=screen.width;
+		var txt1=screen.height;
+		console.log(txt+"  "+txt1);
+
+		function searchFunction(){
+  			var x = document.getElementById("search-box-button");
+  				if (x.style.display === "block") {
+    				x.style.display = "none";
+  				}
+  			 	else {
+    				x.style.display = "block";
+  				}
+  		}
+
+  		function subProduct(cardno){
+  				console.log(typeof(cardno));
+  				var b=document.getElementById(cardno).getElementClassName("price");
+  				console.log(b);
+  		}
+	</script>
+</head>
+<body>
+	<header class="row">
+		<div class="menu-button col-sm-1 col-xsm-1" onclick="openNav()"><i class="fa fa-bars"></i></div>
+		<div class="brand-name col-xlg-3 col-lg-3 col-md-3 col-sm-5 col-xsm-5">DRY FRUITS</div>
+		<div class="nav-buttons-center col-xlg-7 col-lg-6 col-md-7">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li class="drop-down"><a href="#">Dry Fruits</a>
+					<div class="dryfruits-list">
+						<ul>
+							<li><a href="#">Cashew</a></li>
+							<li><a href="#">Almond</a></li>
+							<li><a href="#">Raisin</a></li>
+						</ul>
+					</div>	
+				</li>
+				<li class="drop-down"><a href="#">Spices</a>
+					<div class="dryfruits-list">
+						<ul>
+							<li><a href="#">Black Pepper</a></li>
+							<li><a href="#">Hing</a></li>
+							<li><a href="#">Safron</a></li>
+						</ul>
+					</div>	
+				</li>
+				<li><a href="#">Gud</a></li>
+				<li><a href="#">More</a></li>
+			</ul>
+		</div>
+		<div class="nav-buttons-right col-xlg-2 col-lg-3 col-md-2 col-sm-6 col-xsm-6">
+			<ul>
+				<li class="drop-down"><i class="fa fa-user-circle"></i>
+					<div class="user-dropdown">
+						<ul>
+							<li><a href="#">Your Account</a></li>
+							<li><a href="#">Your Orders</a></li>
+							<li><a href="#">Rewards</a></li>
+							<li><a href="Login.html" ><button type="button" class="login-button">Sign In</button></a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
+				<li onclick="searchFunction()"><i class="fa fa-search"></i></li>
+			</ul>
+		</div>
+		<div style="clear: both;"></div>
+		<!-- Mobile Navigation Bar -->
+		<div class="mobile-nav" id="sideNav">
+			<ul>
+				<li><i class="fa fa-user-circle icon"></i><span class="icon-name">Hello,Sign In</span><span id="closeNav" onclick="closeNav()"><i class="fa fa-times"></i></span></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Dry Fruits</a>
+					<ul class="list">	
+						<li><a href="#">Cashew</a></li>
+						<li><a href="#">Almond</a></li>
+						<li><a href="#">Raisine</a></li>
+					</ul>
+				</li>		
+				<li><a href="#">Spices</a>
+					<ul class="list">
+						<li><a href="#">Black Pepper</a></li>
+						<li><a href="#">Safron</a></li>
+						<li><a href="#">Hing</a></li>
+					</ul>
+				</li>		
+				<li><a href="#">Gud</a></li>
+				<li><a href="#">Account</a>
+					<ul class="list">
+						<li><a href="#">Orders</a></li>
+						<li><a href="#">Rewards</a></li>
+					</ul>
+				</li>		
+				<li><a href="#">More</a>
+					<ul class="list">	
+						<li><a href="Login.html">Sign In</a></li>
+						<li><a href="#">LogOut</a></li>
+					</ul>
+				</li>			
+			</ul>
+		</div>
+	</header>
+	<div class="row product-image-type" id="section-2">
+		<div class="col-xlg-6 col-lg-6 col-md-6 col-sm-12 product-section">
+			<div class="image-box">
+				<img src="almonds1.png">
+			</div>
+		</div>
+		<div class="col-xlg-6 col-lg-6 col-md-6 col-sm-12 col-xsm-12 type-section">
+			<div class="search-box" id="search-box-button">
+				<form>
+					<input type="search" name="search" placeholder="DryFruits..">
+					<button type="submit"><i class="fa fa-search"></i></button>
+					<div style="clear: both;"></div>
+				</form>
+			</div>	
+			<div class="quote">
+				<span class="line1">"Being <span style="color: #F25474;">Healthy</span></span><br><span class="line2">Isn't a Goal.</span><br><span class="line3">It's a way of <span style="color: #F25474">living</span>"</span>
+			</div>
+			<div class="types">
+				<span class="types-heading">Dry Fruits <span style="font-size: 20px;">easy to pick</span></span>
+				<div class="types-item">
+					<ul>
+						<li><a href="#"><div id="Kaju-img"><span>Cashew</span></div></a></li>
+						<li><a href="#"><div id="Badam-img"><span>Almond</span></div></a></li>
+						<li><a href="#"><div id="Pista-img"><span>Pista</span></div></a></li>
+						<li><a href="#"><div id="Raisins-img"><span>Raisin</span></div></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+	<br>
+	<!-- Best Seller Section-->
+	<div class="bestseller-section">
+		<div class="heading-viewbutton">
+			<span class="heading">Best Seller</span>
+			<button type="submit">View All</button>
+			<div style="clear: both;"></div>
+		</div>
+		<div class="product-container">
+			<div class="item-box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card" id="card1" >
+					<a href="#">
+					<img src="bestseller/towerpista.png" class="img-box">
+					<span class="product-name">Pistachios Rosted & Salted(irani)</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct('card1')"></i><span class="property-value"> 1 </span><i class="fa fa-plus"  onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice" >Total Price</span><span class="property-name mprice">Price</span><i class="fa fa-inr"></i><span class="property-value price">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="button" class="add-cart">Add To Cart</button>
+				</div>
+			</div>
+			
+			<div class="item-box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/elaichi.png" class="img-bowl">
+					<span class="product-name">Hari Elaichi</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus"  onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value" id="price">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="button" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			
+			<div class="item-box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/turmeric1.png" class="img-bowl">
+					<span class="product-name">Turmeric</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus"  onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value" id="price">610</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+
+			<div class="item-box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/Wallnut2.png" class="img-box">
+					<span class="product-name">Wallnuts In Shell</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus" onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div style="clear: both"></div>
+		</div>
+	</div>
+	<!-- Best Seller Section Ends-->
+	<br>
+	<!--Dry Fruits Section-->
+	<div class="dryfruits-section">
+		<div class="heading-viewbutton">
+			<span class="heading">Dry Fruits</span>
+			<button type="submit">View All</button>
+			<div style="clear: both;"></div>
+		</div>
+		<div class="product-container">
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/cashew.png" class="img-box">
+					<span class="product-name">Cashew Nuts</span>
+					<span class="product-quantity">200g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus"  onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/almond.png" class="img-bowl">
+					<span class="product-name">Almond</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus" onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/towerpista.png" class="img-box">
+					<span class="product-name">Pistachios Rosted & Salted(irani)</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus"  onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/anjeer.png" class="img-box-anjeer">
+					<span class="product-name">Anjeer</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus" onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/raisins.png" class="img-bowl">
+					<span class="product-name">Raisins</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus" onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/drydates.png" class="img-box">
+					<span class="product-name">Dry Dates</span>
+					<span class="product-quantity">500g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus"  onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/Wallnut2.png" class="img-box">
+					<span class="product-name">Wallnuts In Shell</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus" onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/makhana.png" class="img-box">
+					<span class="product-name">Makhana</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus"  onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+	<br>
+	<!--Spices Section-->
+	<div class="spices-section">
+		<div class="heading-viewbutton">
+			<span class="heading">Spices</span>
+			<button type="submit">View All</button>
+			<div style="clear: both;"></div>
+		</div>
+		<div class="product-container">
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/blackpepper.png" class="img-bowl">
+					<span class="product-name">Black Pepper</span>
+					<span class="product-quantity">200g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus"  onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/cumin.png" class="img-bowl">
+					<span class="product-name">Cumin</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus" onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/elaichi.png" class="img-bowl">
+					<span class="product-name">Hari Elaichi</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus"  onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/fenugreek.png" class="img-bowl">
+					<span class="product-name">Fenugreek</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus" onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/turmeric1.png" class="img-bowl">
+					<span class="product-name">Turmeric</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus"  onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/cloves.png" class="img-bowl">
+					<span class="product-name">Cloves</span>
+					<span class="product-quantity">500g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus"  onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/cinammon.png" class="img-bowl">
+					<span class="product-name">Cinammon</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus" onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/staranise.png" class="img-bowl">
+					<span class="product-name">Star Anise</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus"  onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+	<!--Spices Section Ends-->
+	<br>
+	<!--Gud Section-->
+	<div class="spices-section">
+		<div class="heading-viewbutton">
+			<span class="heading">Gud</span>
+			<button type="submit">View All</button>
+			<div style="clear: both;"></div>
+		</div>
+		<div class="product-container">
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/kolaphurigud.png" class="img-bowl">
+					<span class="product-name">Kolaphuri Gud</span>
+					<span class="product-quantity">200g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus"  onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/jaggeryball.png" class="img-bowl">
+					<span class="product-name">Jaggery Balls</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus" onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/malwigud.png" class="img-bowl">
+					<span class="product-name">Malwi Gud</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus"  onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div class="item-box box col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-6 tiny-box">
+				<div class="item-card">
+					<a href="#">
+					<img src="bestseller/naturaljaggery.png" class="img-bowl">
+					<span class="product-name">Natural Jaggery</span>
+					<span class="product-quantity">250g</span></a>
+					<div class="product-properties">
+						<div class="qty"><span class="property-name">Quantity</span><i class="fa fa-minus" onclick="subProduct()"></i><span class="property-value"> 1 </span><i class="fa fa-plus" onclick="addProduct()"></i></div>
+						<div class="product-tprice"><span class="property-name tprice">Total Price</span><span class="property-value mprice">Price</span><i class="fa fa-inr"></i><span class="property-value">510</span></div>
+						<div class="product-rating"><span class="property-name">Rating</span><span class="property-value">4.7</span><i class="fa fa-star"></i></div>
+					</div>
+					<button type="submit" class="add-cart">Add To Cart</button>
+					
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+	<!--Gud Section Ends-->
+	<div style="background-color: brown">Hello World</div>
+
+</body>
+</html>

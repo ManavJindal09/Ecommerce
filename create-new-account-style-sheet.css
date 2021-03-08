@@ -1,0 +1,120 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding:0;
+}
+body{
+		background-image: url('greenjpg.jpg');
+		height: auto;
+}
+.create-new-account-section{
+	background-color:  #ECF0F1;
+	width: 650px;
+	margin: 20px auto;
+}
+.create-new-account-section .header-section{
+	text-align: center;
+	padding-top:10px;
+	display: block;
+}
+.create-new-account-section .header-section .heading{
+	display: block;
+	margin: 20px;
+	font-size: 45px;
+}
+.create-new-account-section .header-section .heading-2{
+	font-size: 20px;
+	display: block;
+	margin: 20px;
+}
+.create-new-account-section .header-section .heading-2 a{
+	text-decoration: none;
+	color:#ef2a51;
+}
+.create-new-account-section .create-new-account-form label{
+	margin: 15px 70px;
+	font-size: 22px;
+	display: block;
+}
+.create-new-account-section .create-new-account-form input[type=text],input[type=password],input[type=email]{
+	width: 80%;
+	padding: 12px 12px;
+	margin: 20px auto;
+  	display: block;
+  	border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+
+}
+.create-new-account-section .create-new-account-form select{
+	width: 80%;
+	padding: 12px 12px;
+	margin: 25px auto;
+  	display: block;
+  	border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.create-new-account-section .create-new-account-form .termsandcondition{
+	margin: 10px auto;
+	width: 90%;
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 5px;
+}
+.create-new-account-section .create-new-account-form .termsandcondition a{
+	text-decoration: none;
+	color:#ef2a51;
+}
+
+.create-new-account-section .create-new-account-form input[type=submit]{
+	margin: 20px auto;
+	display: block;
+	width: 80%;
+	padding: 6px;
+	font-size: 22px;
+	border: none;
+	cursor: pointer;
+	background-color: #F25474;
+	color: white;
+}
+.create-new-account-section .create-new-account-form input[type=submit]:hover{
+	background-color:#ef2a51;
+}
+
+@media(min-width: 550px) and (max-width: 650px) {
+
+	.create-new-account-section{
+		width:550px;
+	}
+}
+@media(min-width: 450px) and (max-width: 549.99px){
+	.create-new-account-section{
+		width:450px;
+	}
+	.create-new-account-section .create-new-account-form label{
+		margin: 15px 50px;
+	}
+}
+@media(max-width: 449.99px){
+	body{
+		background-color: #ECF0F1;
+		background-image: none;
+	}
+	.create-new-account-section{
+		width:100%;
+	}
+	.create-new-account-section .create-new-account-form label{
+		margin: 15px 48px;
+	}
+	.create-new-account-section .header-section .heading{
+		font-size: 32px;
+	}
+	.create-new-account-section .header-section .heading-2{
+		font-size: 16px;
+	}
+	.create-new-account-section .create-new-account-form label{
+		font-size: 20px;
+	}
+}
